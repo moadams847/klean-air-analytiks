@@ -110,7 +110,7 @@
 
             <div class="d-grid gap-2 d-md-block my-5">
               <a
-                href="#"
+                href="#Contact"
                 class="btn btn-lg btn-primary rounded-5 me-2"
                 role="button"
                 >Contact Us</a
@@ -379,6 +379,22 @@
         <div class="row justify-content-center my-5">
           <div class="col-md-6">
             <form class="needs-validation">
+
+              <div class="mb-3">
+                <label for="country" class="form-label"
+                  >Country<span class="text-danger">*</span></label
+                >
+                <select
+                  id="country"
+                  name="country"
+                  class="form-select"
+                  required
+                >
+                  <option selected></option>
+                  <!-- Options will be populated here -->
+                </select>
+              </div>
+
               <div class="mb-3">
                 <label for="FirstName" class="form-label"
                   >First Name<span class="text-danger">*</span></label
@@ -410,8 +426,8 @@
                 <input type="email" class="form-control" id="email" required />
               </div>
 
-              <div class="mb-3">
-
+              <div class="row mb-3">
+                <div class="col-md-5 col">
                   <label for="countryCode" class="form-label"
                     >Country Code<span class="text-danger">*</span></label
                   >
@@ -424,19 +440,20 @@
                     <option selected></option>
                     <!-- Country code options will be populated here -->
                   </select>
-              </div>
+                </div>
 
-              <div class="mb-3">
-                <label for="mobile" class="form-label"
-                >Phone<span class="text-danger">*</span></label
-              >
-              <input
-                type="tel"
-                class="form-control"
-                id="mobile"
-                name="mobile"
-                required
-              />
+                <div class="col-md-7 col">
+                  <label for="mobile" class="form-label"
+                    >Phone<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="mobile"
+                    name="mobile"
+                    required
+                  />
+                </div>
               </div>
 
               <div class="mb-3">
@@ -491,21 +508,6 @@
                   rows="3"
                   required
                 ></textarea>
-              </div>
-
-              <div class="mb-3">
-                <label for="country" class="form-label"
-                  >Country<span class="text-danger">*</span></label
-                >
-                <select
-                  id="country"
-                  name="country"
-                  class="form-select"
-                  required
-                >
-                  <option selected></option>
-                  <!-- Options will be populated here -->
-                </select>
               </div>
 
               <div class="form-check mb-3">
