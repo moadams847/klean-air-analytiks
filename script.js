@@ -38,3 +38,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+$(document).ready(function() {
+    function toggleNavbarMethod() {
+        if ($(window).width() > 768) {
+            $('.navbar .dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105);
+            });
+        } else {
+            $('.navbar .dropdown').off('mouseenter mouseleave');
+        }
+    }
+
+    toggleNavbarMethod();
+
+    $(window).resize(toggleNavbarMethod);
+});
