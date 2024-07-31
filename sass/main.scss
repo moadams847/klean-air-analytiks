@@ -14,9 +14,11 @@ $light: #D6EFD8;
 
 // custom map
 $custom-theme-colors: (
-  "altlight": #fff5a5,
+  "altlight": #F7FBFC,
   "altdark": #6a2c70,
 );
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 // entire bootstrap file goes here
 // import bootstrap
