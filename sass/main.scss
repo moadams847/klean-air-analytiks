@@ -16,6 +16,7 @@ $light: #D6EFD8;
 $custom-theme-colors: (
   "altlight": #F7FBFC,
   "altdark": #6a2c70,
+  "mygray": #EEEDEB,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
