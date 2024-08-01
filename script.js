@@ -39,6 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+// $(document).ready(function() {
+//     function toggleNavbarMethod() {
+//         if ($(window).width() > 768) {
+//             $('.navbar .dropdown').hover(function() {
+//                 $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+//             }, function() {
+//                 $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105);
+//             });
+//         } else {
+//             $('.navbar .dropdown').off('mouseenter mouseleave');
+//         }
+//     }
+
+
+//     toggleNavbarMethod();
+
+//     $(window).resize(toggleNavbarMethod);
+// });
+
 $(document).ready(function() {
     function toggleNavbarMethod() {
         if ($(window).width() > 768) {
@@ -49,6 +68,20 @@ $(document).ready(function() {
             });
         } else {
             $('.navbar .dropdown').off('mouseenter mouseleave');
+
+            // Add click event for small screens to toggle dropdown
+            $('.navbar .dropdown-toggle').off('click').on('click', function(e) {
+                var $dropdownMenu = $(this).siblings('.dropdown-menu');
+                if ($dropdownMenu.is(':visible')) {
+                    $dropdownMenu.slideUp(150);
+                } else {
+                    // Close other open dropdowns
+                    $('.dropdown-menu').slideUp(150);
+                    $dropdownMenu.slideDown(150);
+                }
+                e.stopPropagation();
+                e.preventDefault();
+            });
         }
     }
 
@@ -56,3 +89,4 @@ $(document).ready(function() {
 
     $(window).resize(toggleNavbarMethod);
 });
+
