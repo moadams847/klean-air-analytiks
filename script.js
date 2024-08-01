@@ -58,35 +58,59 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 //     $(window).resize(toggleNavbarMethod);
 // });
 
+
+
 $(document).ready(function() {
     function toggleNavbarMethod() {
         if ($(window).width() > 768) {
             $('.navbar .dropdown').hover(function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+                $(this).find('.dropdown-menu').first().show();
             }, function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105);
+                $(this).find('.dropdown-menu').first().hide();
             });
         } else {
             $('.navbar .dropdown').off('mouseenter mouseleave');
-
-            // Add click event for small screens to toggle dropdown
-            $('.navbar .dropdown-toggle').off('click').on('click', function(e) {
-                var $dropdownMenu = $(this).siblings('.dropdown-menu');
-                if ($dropdownMenu.is(':visible')) {
-                    $dropdownMenu.slideUp(150);
-                } else {
-                    // Close other open dropdowns
-                    $('.dropdown-menu').slideUp(150);
-                    $dropdownMenu.slideDown(150);
-                }
-                e.stopPropagation();
-                e.preventDefault();
-            });
         }
     }
 
     toggleNavbarMethod();
-
     $(window).resize(toggleNavbarMethod);
-});
 
+    // Hide all dropdown menus initially on small screens
+    if ($(window).width() < 768) {
+        $('.dropdown-menu').hide();
+    }
+
+    // Custom click handling for dropdown toggle
+    $('.dropdown-toggle').on('click', function(e) {
+        if ($(window).width() < 768) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var $dropdownMenu = $(this).next('.dropdown-menu');
+            var isVisible = $dropdownMenu.is(':visible');
+
+            // Close all dropdown menus
+            $('.dropdown-menu').not($dropdownMenu).hide();
+
+            // Toggle the clicked menu
+            if (isVisible) {
+                $dropdownMenu.hide();
+            } else {
+                $dropdownMenu.show();
+            }
+        }
+    });
+
+    // Prevent dropdown menu from closing when clicking inside
+    $('.dropdown-menu').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    // Close dropdown when clicking outside
+    $(document).on('click', function(e) {
+        if ($(window).width() < 768) {
+            $('.dropdown-menu').hide();
+        }
+    });
+});
