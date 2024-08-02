@@ -2,6 +2,13 @@
 
 /* https://colorhunt.co/palette/d6efd880af81508d4e1a5319 */
 
+body::before {
+    display: block;
+    content: '';
+    height: 40px;
+}
+  
+
 section {
         padding: 60px 0;
       }
