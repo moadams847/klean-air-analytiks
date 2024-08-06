@@ -1,0 +1,36 @@
+/* font color link */
+
+/* https://colorhunt.co/palette/d6efd880af81508d4e1a5319 */
+
+body::before {
+    display: block;
+    content: '';
+    height: 40px;
+}
+  
+
+section {
+        padding: 60px 0;
+      }
+
+
+.carousel-item {
+        transition: transform 20s ease-in-out !important; /* Adjust the duration and easing */
+    }
+
+
+
+@media (min-width: 768px) {
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  

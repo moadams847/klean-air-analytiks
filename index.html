@@ -3,29 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Clean Air Analytics</title>
+    <title>Klin Air Analytiks</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- bootstrap font icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
+
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    />
-    <style>
-      section {
-        padding: 60px 0;
-      }
-    </style>
+    /> -->
+
+    <!-- customized bootstrap css -->
+    <link rel="stylesheet" href="./sass/main.css" />
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="bg-white">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
       <div class="container-lg">
+<<<<<<< colab_pro
+        <a class="navbar-brand text-primary fw-bold" href="#">
+          <span> <i class="bi bi-bar-chart h3"></i> Clean Air Analytiks</span></a
+=======
         <a class="navbar-brand text-primary" href="#">
-          <span> <i class="bi bi-bar-chart h1"></i> Clean Air Analytiks</span></a
+          <span> <i class="bi bi-bar-chart h3"></i> Clean Air Analytiks</span></a
+>>>>>>> main
         >
         <button
           class="navbar-toggler"
@@ -44,34 +56,70 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
+
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#"
+              <a class="nav-link text-dark" aria-current="page" href="#"
                 >Open Source Projects</a
               >
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#services">Solutions</a>
+              <a class="nav-link text-dark" href="https://medium.com/@moadams847" target="_blank">Blogs</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Conferences</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Team</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Partners</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
-            </li>
+<<<<<<< colab_pro
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
+              <ul class="dropdown-menu border border-0 bg-white">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#Team">Team</a></li>
+                <li><a class="dropdown-item" href="#">Conferences</a></li>
+                <li><a class="dropdown-item" href="#partners">Partners</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+=======
             <li class="nav-item">
               <a href="#" class="btn btn-primary btn-lg rounded-5" role="button"
                 >Contact</a
               >
+>>>>>>> main
             </li>
+
+              <li class="nav-item active ms-md-2 ms-0 d-md-block d-none">
+                <a
+                  href="#solution"
+                  class="btn btn-light btn-md rounded-4 px-4"
+                  role="button"
+                  >Solutions</a
+                >
+              </li>
+  
+                <li class="nav-item d-md-none d-block">
+                  <a
+                    href="#solution"
+                    class="nav-link active text-dark"
+                    role="button"
+                    >Solutions</a
+                  >
+                </li>
+
+                <li class="nav-item active ms-md-2 ms-0 d-md-block d-none">
+                  <a
+                    href="#Contact"
+                    class="btn btn-primary btn-md rounded-4"
+                    role="button"
+                    >Contact Us</a
+                  >
+                </li>
+    
+                  <li class="nav-item d-md-none d-block">
+                    <a
+                      href="#Contact"
+                      class="nav-link active text-dark"
+                      role="button"
+                      >Contact Us</a
+                    >
+                  </li>
           </ul>
         </div>
       </div>
@@ -80,61 +128,73 @@
     <!-- hero section -->
     <section class="mt-5" id="hero">
       <div class="container-lg">
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-md-between align-items-center">
+
           <div class="col-md-5 text-center text-md-start">
 
-              <h4 class="display-4 mb-3">Lorem ipsum dolor <br> Lorem, ipsum.</h4>
-
+            <div class="align-self-md-center mb-5 mb-md-0">
+              <h4 class="display-4 mb-3">
+                 Air Analytics  <br />
+                At It's Best.
+              </h4>
+  
               <div>
                 <p class="text-primary my-0 fw-bold">
-                    “Lorem ipsum, dolor sit amet consectetur dolor dolor.”
-                  </p>
-
-                <p class="lead text-muted">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  “Lorem ipsum, dolor sit amet consectetur dolor dolor.”
                 </p>
-
+  
+                <p class="lead text-muted">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
               </div>
-
-            <div class="d-grid gap-2 d-md-block my-5">
-                
-              <a href="#" class="btn btn-lg btn-primary rounded-5 me-2" role="button">Contact Us</a>
-
-              <a
-                href="#services"
-                class="btn btn-lg btn-light rounded-5" role="button"
-                >Our Services</a
-              >
-
+  
+              <div class="d-flex flex-md-row flex-column mt-5">
+                <a
+                  href="#Contact"
+                  class="btn btn-lg btn-primary rounded-4 me-md-3 px-3"
+                  role="button"
+                  >Contact Us</a
+                >
+  
+                <a
+                  href="#solution"
+                  class="btn btn-lg btn-light rounded-4 mt-md-0 mt-2 px-4"
+                  role="button"
+                  >Solutions</a
+                >
+              </div>
             </div>
-            
-          </div>
+            </div>
 
-          <div class="col-md-6 mt-4">
+          <div class="col-md-6 mt-md-4">
             <img
               class="img-fluid rounded"
-              src="/assets/IMG_3396.jpg"
+              src="/assets/IMG_0810.jpg"
               alt="conference pic "
             />
           </div>
         </div>
+
       </div>
     </section>
+
+
     <!-- services -->
-    <section id="services" class="bg-light mt-2 mt-md-5">
+    <section id="solution" class="bg-altlight mt-5">
       <div class="container-lg">
         <div class="text-center">
-          <h2>Our Services</h2>
+          <h2>Our Solutions</h2>
           <p class="lead text-muted">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, alias.
           </p>
         </div>
 
         <div
-          class="row my-5 align-items-center justify-content-center"
+          class="row my-5 align-items-center justify-content-center gap-5 gap-md-0"
         >
           <div class="col-lg-3">
-            <div class="card border-0">
+            <div class="card border-0 shadow-sm">
               <img
                 src="/assets/IMG_3396.jpg"
                 class="card-img-top"
@@ -142,16 +202,17 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.
                 </p>
-                <a href="" class="btn btn-outline-primary btn-lg rounded-5"> See more <i class="bi bi-arrow-right"></i></a>
+                <a href="" class="btn btn-outline-primary btn-lg rounded-4">
+                  See more <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3">
-            <div class="card border-0">
+            <div class="card border-0 shadow-sm">
               <img
                 src="/assets/IMG_3186(1).jpg"
                 class="card-img-top"
@@ -159,16 +220,17 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.
                 </p>
-                <a href="" class="btn btn-outline-primary btn-lg rounded-5">See more <i class="bi bi-arrow-right"></i></a>
+                <a href="" class="btn btn-outline-primary btn-lg rounded-4"
+                  >See more <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3">
-            <div class="card border-0">
+            <div class="card border-0 shadow-sm">
               <img
                 src="/assets/IMG_3696.jpg"
                 class="card-img-top"
@@ -176,16 +238,17 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.
                 </p>
-                <a href="" class="btn btn-outline-primary btn-lg rounded-5">See more <i class="bi bi-arrow-right"></i></a>
+                <a href="" class="btn btn-outline-primary btn-lg rounded-4"
+                  >See more <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3">
-            <div class="card border-0">
+            <div class="card border-0 shadow-sm">
               <img
                 src="/assets/IMG_1950.jpg"
                 class="card-img-top"
@@ -193,10 +256,11 @@
               />
               <div class="card-body">
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.
                 </p>
-                <a href="" class="btn btn-outline-primary btn-lg rounded-5">See more <i class="bi bi-arrow-right"></i></a>
+                <a href="" class="btn btn-outline-primary btn-lg rounded-4"
+                  >See more <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -204,15 +268,572 @@
       </div>
     </section>
 
-    <!-- contact us -->
 
-    <!-- partners -->
+    <!-- Partners -->
 
-    <!-- founders -->
+    <section id="partners" class="my-5">
+      <div class="container-fluid">
+        <div class="text-center mb-5">
+          <h2>Our Partners</h2>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, alias.
+          </p>
+        </div>
+
+        <div
+          id="logoCarousel"
+          class="carousel slide d-none d-md-block"
+          data-bs-ride="carousel"
+          data-bs-pause="hover"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active h1 text-dark">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <span><i class="bi bi-amazon"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-windows"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-meta"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-google"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-apple"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-twitter-x"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-facebook"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-instagram"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-around h1 text-dark">
+                <div>
+                  <span><i class="bi bi-amazon"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-windows"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-meta"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-google"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-apple"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-twitter-x"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-facebook"></i></span>
+                </div>
+                <div>
+                  <span><i class="bi bi-instagram"></i></span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div> 
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                    </div>
+                </div> -->
+            <!-- <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                        <div><span><i class="bi bi-airplane h1 text-primary"></i></span></div>  
+                    </div>
+                </div> -->
+            <!-- Add more carousel items as needed -->
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button> -->
+          <!-- <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+        <div
+          class="d-flex justify-content-between d-md-none d-block h3 container-lg"
+        >
+          <div>
+            <span><i class="bi bi-amazon"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-windows"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-meta"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-google"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-apple"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-twitter-x"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-facebook"></i></span>
+          </div>
+          <div>
+            <span><i class="bi bi-instagram"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- conatact US -->
+
+    <section id="Contact" class="mt-5 bg-altlight">
+      <div class="container-lg">
+        
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+            accusantium.
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-md-6">
+            <form class="needs-validation">
+
+              <div class="mb-3">
+                <label for="country" class="form-label"
+                  >Country<span class="text-danger">*</span></label
+                >
+                <select
+                  id="country"
+                  name="country"
+                  class="form-select"
+                  required
+                >
+                  <option selected></option>
+                  <!-- Options will be populated here -->
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="FirstName" class="form-label"
+                  >First Name<span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="FirstName"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="LasttName" class="form-label"
+                  >Last Name<span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="LasttName"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Email address<span class="text-danger">*</span></label
+                >
+                <input type="email" class="form-control" id="email" required />
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5 col-12 mb-3 mb-md-0">
+                  <label for="countryCode" class="form-label"
+                    >Country Code<span class="text-danger">*</span></label
+                  >
+                  <select
+                    id="countryCode"
+                    name="countryCode"
+                    class="form-select"
+                    required
+                  >
+                    <option selected></option>
+                    <!-- Country code options will be populated here -->
+                  </select>
+                </div>
+
+                <div class="col-md-7 col-12">
+                  <label for="mobile" class="form-label"
+                    >Phone<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="mobile"
+                    name="mobile"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="reason" class="form-label"
+                  >Reason for contacting<span class="text-danger"
+                    >*</span
+                  ></label
+                >
+                <select
+                  class="form-select"
+                  id="reason"
+                  name="reason"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="sector" class="form-label"
+                  >Sector<span class="text-danger">*</span></label
+                >
+                <select
+                  class="form-select"
+                  id="sector"
+                  name="sector"
+                  aria-label="Default select sector"
+                  required
+                >
+                  <option selected></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="aboutProject" class="form-label"
+                  >Tell us more about your project or your needs<span
+                    class="text-danger"
+                    >*</span
+                  ></label
+                >
+                <textarea
+                  class="form-control"
+                  id="aboutProject"
+                  name="aboutProject"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  required
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  I allow Klin Air Analytics to contact me for further
+                  information<span class="text-danger">*</span>
+                </label>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-lg rounded-4 btn-primary">
+                  Submit
+                </button>
+              </div>
+              <!-- 
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-lg btn-primary" type="button">Submit</button>
+        </div>
+         -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team -->
+    <section id="Team" class="mt-5">
+
+      <div class="container-lg">
+
+        <div class="text-center">
+          <h2>Meet The Team</h2>
+          <p class="lead">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+            accusantium.
+          </p>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-5">
+
+          <!-- 1 -->
+          <div class="col-md-6 mb-4">
+
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+                <div class="mb-md-0 mb-4 align-self-md-center">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
+                </div>
+
+                <div class="team-desc align-self-center w-100">
+                  <h4 class="mb-1 text-primary fw-bold">Mohammed Adams</h4>
+                  <span> Co-Founder & Lead Analytics Engineer</span>
+                  <!-- <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
+
+                  <div class="text-primary mt-3">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 2 -->
+
+          <div class="col-md-6 mb-4">
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+
+                <div class="mb-md-0 mb-4">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
+                </div>
+
+                <div class="team-desc align-self-center w-100">
+                  <h4 class="mb-2 text-primary fw-bold">Mohammed Adams</h4>
+                  <span>Co-Founder & Lead Analytics Engineer</span>
+                  <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
+
+                  <div class=" mt-3 text-primary">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3 -->
+
+          <div class="col-md-6 mb-4">
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+                <div class="mb-md-0 mb-4">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams-removebg-preview.png" alt="">
+                </div>
+
+                <div class="team-desc">
+                  <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+                  <span>Co-Founder & Lead Analytics Engineer</span>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+
+                  <div class="text-primary">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+                <div class="mb-md-0 mb-4">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams-removebg-preview.png" alt="">
+                </div>
+
+                <div class="team-desc">
+                  <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+                  <span>Co-Founder & Lead Analytics Engineer</span>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+
+                  <div class="text-primary">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-md-6 mb-md-0 mb-4">
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+                <div class="mb-md-0 mb-4">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
+                </div>
+
+                <div class="team-desc">
+                  <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+                  <span>Co-Founder & Lead Analytics Engineer</span>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+
+                  <div class="text-primary">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-md-6">
+            <div class="card shadow border-0 p-2 text-md-start text-center">
+
+              <div class="card-body d-flex flex-md-row flex-column">
+                <div class="mb-md-0 mb-4">
+                  <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams-removebg-preview.png" alt="">
+                </div>
+
+                <div class="team-desc">
+                  <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+                  <span>Co-Founder & Lead Analytics Engineer</span>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+
+                  <div class="text-primary">
+                    <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                    <a  class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-black mt-5 pb-3">
+
+      <div class="container-lg text-center text-md-start">
+
+        <div class="row border-bottom border-0 justify-content-center py-5">
+
+          <div class="col-md-4 me-md-5 me-0 mb-3 mb-md-0">
+            <div class="text-white">
+              <h4><i class="bi bi-bar-chart h3"></i> Klin Air Analytiks</h4>
+              <p class="h6 my-2 text-secondary">Lorem ipsum dolor sit amet.</p>
+            </div>
+                        
+            <div>
+              <a class="me-2 text-secondary" href="#"><i class="bi bi-instagram"></i></a>
+              <a  class="me-2 text-secondary" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="me-2 text-secondary" href="#"><i class="bi bi-linkedin"></i></a>
+              <a class="me-2 text-secondary" href="#"><i class="bi bi-twitter-x"></i></a>
+              <a class="me-2 text-secondary" href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-md-0 my-4">
+            <h4 class="text-white">Address</h4>
+            <p class="text-secondary">Klin Air Analytiks <br> 
+              CX-011-3095, Freetown,
+              <br> Kasoa - Central 
+              <br>Ghana</p>
+          </div>
+
+          <div class="col-md-3 text-white">
+            <h4>Useful Links</h4>
+            
+            <div class="d-flex flex-column">
+              <a class="text-decoration-none text-secondary" href="">Home</a>
+              <a class="text-decoration-none text-secondary" href="">Team</a>
+              <a class="text-decoration-none text-secondary" href="">Blogs</a>
+              <a class="text-decoration-none text-secondary" href="">Careers</a>  
+              <a class="text-decoration-none text-secondary" href="">Solutions</a>
+              <a class="text-decoration-none text-secondary" href="">About Us</a>
+              <a class="text-decoration-none text-secondary" href="">Conntact Us</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 text-secondary"> © 2024 Klin Air Analytiks – All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
