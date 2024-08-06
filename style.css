@@ -32,5 +32,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* the favicon */
+favicon {
+    display: inline-block;
+    width: 16px; /* Standard favicon size */
+    height: 16px;
+    background-image: url('air-quality-logo.png');
+    background-size: cover;
+  }
+  
+  .hover-text-green:hover {
+    color: green;
+  }
+  
+  
   
