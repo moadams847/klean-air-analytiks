@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="assets/favicon2-removebg-preview.png" type="image/png" />
+
+    <title>About-Klin Air Analytiks</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- bootstrap font icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+    <!-- customized bootstrap css -->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <!-- custome css -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-white">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
+        <div class="container-lg">
+            <a class="navbar-brand text-primary fw-bold" href="#">
+                <span> <i class="bi bi-bar-chart h3"></i>Klin Air Analytiks</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link hover-text-green" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link hover-text-green" aria-current="page" href="projects.html">Open Source Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link hover-text-green" href="https://medium.com/@moadams847"
+                            target="_blank">Blogs</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" data-bs-toggle="dropdown" href="about.html"
+                            role="button" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu border border-0 bg-white">
+                            <li>
+                                <a class="dropdown-item hover-text-green" href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item hover-text-green" href="#Team">Team</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item hover-text-green" href="#">Conferences</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item hover-text-green" href="#partners">Partners</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item hover-text-green" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active ms-md-2 ms-0 d-md-block d-none">
+                        <a href="#solution" class="btn btn-light btn-md rounded-2 px-4" role="button">Solutions</a>
+                    </li>
+
+                    <li class="nav-item d-md-none d-block">
+                        <a href="#solution" class="nav-link active text-dark" role="button">Solutions</a>
+                    </li>
+
+                    <li class="nav-item active ms-md-2 ms-0 d-md-block d-none">
+                        <a href="#Contact" class="btn btn-primary btn-md rounded-2" role="button">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item d-md-none d-block">
+                        <a href="#Contact" class="nav-link active text-dark" role="button">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero Section -->
+
+    <section class="position-relative overflow-hidden bg-slate-900 text-slate-50 bg-opacity-75 py-6 py-lg-8" style="
+        background: url(assets/abt-bg.jpg) center / cover no-repeat;
+        background-blend-mode: overlay;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      ">
+        <div class="lc-block position-absolute translate-middle top-0 start-0 start-lg-5 top-lg-20 mw-1 mw-lg-7 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="lc-block position-absolute translate-middle top-0 start-50 top-lg-5 start-lg-35 mw-1 mw-lg-5 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="lc-block position-absolute translate-middle top-100 start-100 top-lg-95 mw-5 mw-lg-7 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="container py-4 py-lg-8 text-center">
+            <div class="lc-block mw-lg-6 mx-auto">
+                <div>
+                    <p class="fw-body text-white ls-3 mb-2">Enjoy our Community</p>
+                </div>
+            </div>
+            <div class="lc-block mw-lg-6 mx-auto text-white">
+                <div>
+                    <h2 class="fw-bolder display-3">Our Awesome Team</h2>
+                </div>
+            </div>
+            <div class="lc-block mw-lg-5 mx-auto text-white">
+                <div>
+                    <p class="lead">
+                        Using a series of utilities, you can create this jumbotron, just
+                        like the one in previous versions of Bootstrap.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- the blog -->
+    <section class="overflow-hidden py-6 py-lg-8">
+        <div class="position-relative container">
+            <div class="row mb-4">
+                <div class="col-lg-6 mw-xl-5">
+                    <div class="lc-block mb-4">
+                        <div>
+                            <h1 class="fw-semibold ls-n1">
+                                We're continually on the hunt for extraordinary talent to be
+                                part of our team.
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="lc-block">
+                        <div>
+                            <p class="lead">
+                                Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
+                                euismod lacus. Est non placerat nam arcu. Cras purus nibh
+                                cursus sit eu in id.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col-lg-6">
+                    <div class="lc-block img-thumbnail">
+                        <img src="assets/air-q.jpg" sizes="(max-width: 1080px) 100vw, 536px" width="536" height=""
+                            alt="Photo by Andras Vas" />
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative mb-4 mb-lg-0 mt-lg-n6 mw-xl-5">
+                    <div class="lc-block position-relative mb-5 pb-5 border-bottom">
+                        <div class="lc-block">
+                            <div>
+                                <h2 class="fw-semibold text-slate-600 fs-5">
+                                    Innovative Web Developer
+                                </h2>
+                            </div>
+                            <div>
+                                <p class="fw-light">
+                                    <a href="#3" class="stretched-link text-slate-500 text-decoration-none">Seeking a
+                                        creative individual with a passion for coding
+                                        and design to join our dynamic team. Transform ideas into
+                                        reality with cutting-edge technology...</a><br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lc-block d-flex align-items-center gap-3">
+                            <p class="d-inline fw-bold text-slate-600 mb-0">90,000 USD</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="0.4em" height="0.4em" fill="currentColor"
+                                viewBox="0 0 16 16" class="text-slate-300">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg>
+                            <p class="d-inline mb-0 fw-light text-slate-500">
+                                <span>Seattle, WA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lc-block position-relative mb-5 pb-5 border-bottom">
+                        <div class="lc-block">
+                            <div>
+                                <h2 class="fw-semibold text-slate-600 fs-5">
+                                    Full-time designer
+                                </h2>
+                            </div>
+                            <div>
+                                <p class="fw-light">
+                                    <a href="#2" class="stretched-link text-slate-500 text-decoration-none"><span>Lorem
+                                            ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Tempora quo dolorem ipsa mollitia, praesentium!
+                                            Deserunt modi assumenda quis laborum, aperiam...</span></a><br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lc-block d-flex align-items-center gap-3">
+                            <p class="d-inline fw-bold text-slate-600 mb-0">$75,000 USD</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="0.4em" height="0.4em" fill="currentColor"
+                                viewBox="0 0 16 16" class="text-slate-300">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg>
+                            <p class="d-inline mb-0 fw-light text-slate-500">
+                                <span>Los Angeles, CA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lc-block position-relative mb-5 pb-5 border-bottom">
+                        <div class="lc-block">
+                            <div>
+                                <h2 class="fw-semibold text-slate-600 fs-5">
+                                    Expert Data Analyst
+                                </h2>
+                            </div>
+                            <div>
+                                <p class="fw-light">
+                                    <a href="#5" class="stretched-link text-slate-500 text-decoration-none">Looking for
+                                        an expert data analyst to turn data into
+                                        information, information into insight, and insight into
+                                        business decisions...</a><br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lc-block d-flex align-items-center gap-3">
+                            <p class="d-inline fw-bold text-slate-600 mb-0">85,000 USD</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="0.4em" height="0.4em" fill="currentColor"
+                                viewBox="0 0 16 16" class="text-slate-300">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg>
+                            <p class="d-inline mb-0 fw-light text-slate-500">
+                                <span>Chicago, IL</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lc-block">
+                        <div>
+                            <p>
+                                <a href="#all" class="lead fw-semibold">View all openings →</a><br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- different comp strts -->
+
+    <section class="position-relative overflow-hidden py-6 py-lg-8">
+        <div class="lc-block position-absolute translate-middle top-0 start-0 start-lg-5 top-lg-20 mw-1 mw-lg-7 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="lc-block position-absolute translate-middle top-0 start-50 top-lg-5 start-lg-35 mw-1 mw-lg-5 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="lc-block position-absolute translate-middle top-100 start-100 top-lg-95 mw-5 mw-lg-7 w-100 rounded-circle ratio ratio-1x1"
+            style="background-image: radial-gradient(circle at 50% 50%, rgba(var(--bs-body-color-rgb),.4) 5%, transparent 48.05%">
+        </div>
+
+        <div class="position-relative container d-lg-flex gap-lg-5">
+            <div class="lc-block mb-5 flex-lg-shrink-0 mw-lg-2">
+                <div class="lc-block mb-0">
+                    <div>
+                        <p class="fw-body text-secondary ls-3 small mb-2">
+                            24/7 full services
+                        </p>
+                    </div>
+                </div>
+                <div class="lc-block mb-4">
+                    <div>
+                        <h2 class="fw-bold ls-n1">
+                            Stay on top of<br />customer support
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 g-4 gx-xxl-5">
+                <div
+                    class="col d-flex flex-column justify-content-between text-start pb-3 mb-5 border-bottom border-opacity-50 border-body border-sm-0">
+                    <div>
+                        <div class="lc-block mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor"
+                                class="text-bg-primary rounded p-2" viewBox="0 0 16 16" style="">
+                                <path
+                                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="lc-block mb-1">
+                            <h3 class="d-inline small">Antispam</h3>
+                        </div>
+                        <div class="lc-block">
+                            <p class="text-body text-opacity-75 d-inline small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                                autem sint dolorum, voluptatum sit similique accusamus.
+                                Eligendi impedit, quae quisquam totam quis veritatis ad
+                                soluta! Amet quaerat repudiandae, deserunt molestias.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="d-block mt-4 small" href="#" role="button">Read more →</a>
+                </div>
+                <div
+                    class="col d-flex flex-column justify-content-between text-start pb-3 mb-5 border-bottom border-opacity-50 border-body border-sm-0">
+                    <div>
+                        <div class="lc-block mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" class="text-bg-primary rounded p-2" width="2.5em" height="2.5em"
+                                viewBox="0 0 24 24" style="" fill="currentColor">
+                                <path
+                                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M17.35 10L15.25 19H13.85L12.05 12.21L10.25 19H8.85L6.65 10H8.15L9.55 16.81L11.35 10H12.65L14.45 16.81L15.85 10H17.35Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="lc-block mb-1">
+                            <h3 class="d-inline small">WYSIYWG editor</h3>
+                        </div>
+                        <div class="lc-block">
+                            <p class="text-body text-opacity-75 d-inline small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                                autem sint dolorum, voluptatum sit similique accusamus.
+                                Eligendi impedit, quae quisquam totam quis veritatis ad
+                                soluta! Amet quaerat repudiandae, deserunt molestias.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="d-block mt-4 small" href="#" role="button">Read more →</a>
+                </div>
+                <div
+                    class="col d-flex flex-column justify-content-between text-start pb-3 mb-5 border-bottom border-opacity-50 border-body border-sm-0">
+                    <div>
+                        <div class="lc-block mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" class="text-bg-primary rounded p-2" width="2.5em" height="2.5em"
+                                viewBox="0 0 24 24" style="" fill="currentColor">
+                                <path
+                                    d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H8V21C8 21.6 8.4 22 9 22H9.5C9.7 22 10 21.9 10.2 21.7L13.9 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H13.1L10 19.1V16H4V4H20V16M8 9V11H12.5L10.7 12.8L12 14L16 10L12 6L10.8 7.2L12.5 9H8Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="lc-block mb-1">
+                            <h3 class="d-inline small">Customer Connections</h3>
+                        </div>
+                        <div class="lc-block">
+                            <p class="text-body text-opacity-75 d-inline small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                                autem sint dolorum, voluptatum sit similique accusamus.
+                                Eligendi impedit, quae quisquam totam quis veritatis ad
+                                soluta! Amet quaerat repudiandae, deserunt molestias.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="d-block mt-4 small" href="#" role="button">Read more →</a>
+                </div>
+                <div
+                    class="col d-flex flex-column justify-content-between text-start pb-3 mb-5 border-bottom border-opacity-50 border-body border-sm-0">
+                    <div>
+                        <div class="lc-block mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" class="text-bg-primary rounded p-2" width="2.5em" height="2.5em"
+                                viewBox="0 0 24 24" style="" fill="currentColor">
+                                <path
+                                    d="M19 22.3L18.4 21.8C16.4 19.9 15 18.7 15 17.2C15 16 16 15 17.2 15C17.9 15 18.6 15.3 19 15.8C19.4 15.3 20.1 15 20.8 15C22 15 23 15.9 23 17.2C23 18.7 21.6 19.9 19.6 21.8L19 22.3M20.5 11H19V7C19 5.89 18.1 5 17 5H13V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4C2.9 5 2 5.9 2 7V10.8H3.5C5 10.8 6.2 12 6.2 13.5S5 16.2 3.5 16.2H2V20C2 21.11 2.9 22 4 22H7.8V20.5C7.8 19 9 17.8 10.5 17.8C11.44 17.8 12.27 18.27 12.75 19H13.09C13.04 18.67 13 18.34 13 18C13 14.69 15.69 12 19 12C20.54 12 21.94 12.58 23 13.53C23 13.5 23 13.5 23 13.5C23 12.12 21.88 11 20.5 11Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="lc-block mb-1">
+                            <h3 class="d-inline small">Satisfaction</h3>
+                        </div>
+                        <div class="lc-block">
+                            <p class="text-body text-opacity-75 d-inline small">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                                autem sint dolorum, voluptatum sit similique accusamus.
+                                Eligendi impedit, quae quisquam totam quis veritatis ad
+                                soluta! Amet quaerat repudiandae, deserunt molestias.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="d-block mt-4 small" href="#" role="button">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black mt-5 pb-3">
+        <div class="container-lg text-center text-md-start">
+            <div class="row border-bottom border-0 justify-content-center py-5">
+                <div class="col-md-4 me-md-5 me-0 mb-3 mb-md-0">
+                    <div class="text-white">
+                        <h4><i class="bi bi-bar-chart h3"></i> Klin Air Analytiks</h4>
+                        <p class="h6 my-2 text-secondary">Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div>
+                        <a class="me-2 text-secondary" href="#"><i class="bi bi-instagram"></i></a>
+                        <a class="me-2 text-secondary" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="me-2 text-secondary" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="me-2 text-secondary" href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a class="me-2 text-secondary" href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-md-0 my-4">
+                    <h4 class="text-white">Address</h4>
+                    <p class="text-secondary">
+                        Klin Air Analytiks <br />
+                        CX-011-3095, Freetown,
+                        <br />
+                        Kasoa - Central <br />Ghana
+                    </p>
+                </div>
+
+                <div class="col-md-3 text-white">
+                    <h4>Useful Links</h4>
+
+                    <div class="d-flex flex-column">
+                        <a class="text-decoration-none text-secondary" href="">Home</a>
+                        <a class="text-decoration-none text-secondary" href="">Team</a>
+                        <a class="text-decoration-none text-secondary" href="">Blogs</a>
+                        <a class="text-decoration-none text-secondary" href="">Careers</a>
+                        <a class="text-decoration-none text-secondary" href="">Solutions</a>
+                        <a class="text-decoration-none text-secondary" href="">About Us</a>
+                        <a class="text-decoration-none text-secondary" href="">Conntact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-secondary">
+                © 2024 Klin Air Analytiks – All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
