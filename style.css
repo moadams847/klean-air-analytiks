@@ -2,6 +2,18 @@
 
 /* https://colorhunt.co/palette/d6efd880af81508d4e1a5319 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* #Contact {
+  font-family: 'Nunito', sans-serif;
+} */
+
 body::before {
     display: block;
     content: '';
@@ -26,11 +38,6 @@ section {
       }
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 .hover-text-green:hover {
     color: #198754;
