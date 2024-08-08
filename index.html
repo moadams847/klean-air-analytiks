@@ -327,105 +327,113 @@
   <!-- conatact US -->
 
   <section id="Contact" class="mt-5 bg-altlight">
-    <div class="container-lg">
+    <div class="container-lg d-flex justify-content-center">
 
-      <div class="text-center">
-        <h2>Get in Touch</h2>
-        <p class="lead">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
-          accusantium.
-        </p>
+      <div class="card border-0 shadow-sm rounded-4 w-75">
+        <div class="card-body">
+
+          <div class="text-center pt-4">
+            <h2 class="fw-bold ">Get in Touch</h2>
+            <p class="lead">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+              accusantium.
+            </p>
+          </div>
+
+          <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+              <form class="needs-validation">
+    
+                <div class="mb-3">
+                  <label for="country" class="form-label">Country<span class="text-danger">*</span></label>
+                  <select id="country" name="country" class="form-select" required>
+                    <option selected></option>
+                    <!-- Options will be populated here -->
+                  </select>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="FirstName" class="form-label">First Name<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="FirstName" required />
+                </div>
+    
+                <div class="mb-3">
+                  <label for="LasttName" class="form-label">Last Name<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="LasttName" required />
+                </div>
+    
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address<span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+    
+                <div class="row mb-3">
+                  <div class="col-md-5 col-12 mb-3 mb-md-0">
+                    <label for="countryCode" class="form-label">Country Code<span class="text-danger">*</span></label>
+                    <select id="countryCode" name="countryCode" class="form-select" required>
+                      <option selected></option>
+                      <!-- Country code options will be populated here -->
+                    </select>
+                  </div>
+    
+                  <div class="col-md-7 col-12">
+                    <label for="mobile" class="form-label">Phone<span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" required />
+                  </div>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="reason" class="form-label">Reason for contacting<span class="text-danger">*</span></label>
+                  <select class="form-select" id="reason" name="reason" aria-label="Default select example" required>
+                    <option selected></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="sector" class="form-label">Sector<span class="text-danger">*</span></label>
+                  <select class="form-select" id="sector" name="sector" aria-label="Default select sector" required>
+                    <option selected></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="aboutProject" class="form-label">Tell us more about your project or your needs<span
+                      class="text-danger">*</span></label>
+                  <textarea class="form-control" id="aboutProject" name="aboutProject" rows="3" required></textarea>
+                </div>
+    
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    I allow Klin Air Analytics to contact me for further
+                    information<span class="text-danger">*</span>
+                  </label>
+                </div>
+    
+                <div class="col-12">
+                  <button type="submit" class="btn btn-md rounded-2 btn-primary">
+                    Submit
+                  </button>
+                </div>
+                <!-- 
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-lg btn-primary" type="button">Submit</button>
+            </div>
+             -->
+              </form>
+            </div>
+          </div>
+          
+        </div>
       </div>
 
-      <div class="row justify-content-center my-5">
-        <div class="col-md-6">
-          <form class="needs-validation">
 
-            <div class="mb-3">
-              <label for="country" class="form-label">Country<span class="text-danger">*</span></label>
-              <select id="country" name="country" class="form-select" required>
-                <option selected></option>
-                <!-- Options will be populated here -->
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="FirstName" class="form-label">First Name<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="FirstName" required />
-            </div>
-
-            <div class="mb-3">
-              <label for="LasttName" class="form-label">Last Name<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="LasttName" required />
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address<span class="text-danger">*</span></label>
-              <input type="email" class="form-control" id="email" required />
-            </div>
-
-            <div class="row mb-3">
-              <div class="col-md-5 col-12 mb-3 mb-md-0">
-                <label for="countryCode" class="form-label">Country Code<span class="text-danger">*</span></label>
-                <select id="countryCode" name="countryCode" class="form-select" required>
-                  <option selected></option>
-                  <!-- Country code options will be populated here -->
-                </select>
-              </div>
-
-              <div class="col-md-7 col-12">
-                <label for="mobile" class="form-label">Phone<span class="text-danger">*</span></label>
-                <input type="tel" class="form-control" id="mobile" name="mobile" required />
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="reason" class="form-label">Reason for contacting<span class="text-danger">*</span></label>
-              <select class="form-select" id="reason" name="reason" aria-label="Default select example" required>
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="sector" class="form-label">Sector<span class="text-danger">*</span></label>
-              <select class="form-select" id="sector" name="sector" aria-label="Default select sector" required>
-                <option selected></option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="aboutProject" class="form-label">Tell us more about your project or your needs<span
-                  class="text-danger">*</span></label>
-              <textarea class="form-control" id="aboutProject" name="aboutProject" rows="3" required></textarea>
-            </div>
-
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required />
-              <label class="form-check-label" for="flexCheckChecked">
-                I allow Klin Air Analytics to contact me for further
-                information<span class="text-danger">*</span>
-              </label>
-            </div>
-
-            <div class="col-12">
-              <button type="submit" class="btn btn-lg rounded-4 btn-primary">
-                Submit
-              </button>
-            </div>
-            <!-- 
-        <div class="d-grid gap-2">
-          <button type="submit" class="btn btn-lg btn-primary" type="button">Submit</button>
-        </div>
-         -->
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -503,23 +511,23 @@
           </div>
         </div>
 
-        <!-- 3 -->
+         <!-- 3 -->
 
-        <div class="col-md-6 mb-4">
+         <div class="col-md-6 mb-4">
           <div class="card shadow border-0 p-2 text-md-start text-center">
 
             <div class="card-body d-flex flex-md-row flex-column">
+
               <div class="mb-md-0 mb-4">
-                <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams-removebg-preview.png"
-                  alt="">
+                <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
               </div>
 
-              <div class="team-desc">
-                <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+              <div class="team-desc align-self-center w-100">
+                <h4 class="mb-2 text-primary fw-bold">Mohammed Adams</h4>
                 <span>Co-Founder & Lead Analytics Engineer</span>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+                <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
 
-                <div class="text-primary">
+                <div class=" mt-3 text-primary">
                   <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
                   <a class="me-2" href="#"><i class="bi bi-facebook"></i></a>
                   <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
@@ -533,22 +541,23 @@
           </div>
         </div>
 
-        <!-- 4 -->
-        <div class="col-md-6 mb-4">
+         <!-- 4 -->
+
+         <div class="col-md-6 mb-4">
           <div class="card shadow border-0 p-2 text-md-start text-center">
 
             <div class="card-body d-flex flex-md-row flex-column">
+
               <div class="mb-md-0 mb-4">
-                <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams-removebg-preview.png"
-                  alt="">
+                <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
               </div>
 
-              <div class="team-desc">
-                <h4 class="mb-2 text-primary">Mohammed Adams</h4>
+              <div class="team-desc align-self-center w-100">
+                <h4 class="mb-2 text-primary fw-bold">Mohammed Adams</h4>
                 <span>Co-Founder & Lead Analytics Engineer</span>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+                <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
 
-                <div class="text-primary">
+                <div class=" mt-3 text-primary">
                   <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
                   <a class="me-2" href="#"><i class="bi bi-facebook"></i></a>
                   <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
@@ -562,8 +571,68 @@
           </div>
         </div>
 
-        <!-- 5 -->
-        <div class="col-md-6 mb-md-0 mb-4">
+           <!-- 5 -->
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow border-0 p-2 text-md-start text-center">
+
+            <div class="card-body d-flex flex-md-row flex-column">
+
+              <div class="mb-md-0 mb-4">
+                <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
+              </div>
+
+              <div class="team-desc align-self-center w-100">
+                <h4 class="mb-2 text-primary fw-bold">Mohammed Adams</h4>
+                <span>Co-Founder & Lead Analytics Engineer</span>
+                <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
+
+                <div class=" mt-3 text-primary">
+                  <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                  <a class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                  <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                  <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        
+            <!-- 6 -->
+
+            <div class="col-md-6 mb-4">
+              <div class="card shadow border-0 p-2 text-md-start text-center">
+    
+                <div class="card-body d-flex flex-md-row flex-column">
+    
+                  <div class="mb-md-0 mb-4">
+                    <img class="img-fluid rounded-circle w-75 overflow-hidden" src="assets/adams.jpg" alt="">
+                  </div>
+    
+                  <div class="team-desc align-self-center w-100">
+                    <h4 class="mb-2 text-primary fw-bold">Mohammed Adams</h4>
+                    <span>Co-Founder & Lead Analytics Engineer</span>
+                    <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p> -->
+    
+                    <div class=" mt-3 text-primary">
+                      <a class="me-2" href="#"><i class="bi bi-instagram"></i></a>
+                      <a class="me-2" href="#"><i class="bi bi-facebook"></i></a>
+                      <a class="me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                      <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </div>
+
+        <!-- 5-->
+        <!-- <div class="col-md-6 mb-md-0 mb-4">
           <div class="card shadow border-0 p-2 text-md-start text-center">
 
             <div class="card-body d-flex flex-md-row flex-column">
@@ -588,10 +657,10 @@
             </div>
 
           </div>
-        </div>
+        </div> -->
 
         <!-- 6 -->
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div class="card shadow border-0 p-2 text-md-start text-center">
 
             <div class="card-body d-flex flex-md-row flex-column">
@@ -612,7 +681,7 @@
                   <a class="me-2" href="#"><i class="bi bi-twitter-x"></i></a>
                   <a class="me-2" href="#"><i class="bi bi-whatsapp"></i></a>
                 </div>
-              </div>
+              </div> -->
 
             </div>
 
