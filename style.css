@@ -9,11 +9,12 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: radial-gradient(#44f795 0.5px, transparent 0.5px), radial-gradient(#44f7a3 0.5px, #e5f7f1 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
+  opacity: ;
+  background-color: #006416;
+  background-image: radial-gradient(#00e851e8 0.8500000000000001px, #dffeeb 0.8500000000000001px);
+  background-size: 70px 70px;
 }
+
 
 
 
