@@ -2,103 +2,127 @@
 
 /* https://colorhunt.co/palette/d6efd880af81508d4e1a5319 */
 
-body::before {
-    display: block;
-    content: '';
-    height: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#44f795 0.5px, transparent 0.5px), radial-gradient(#44f7a3 0.5px, #e5f7f1 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
 }
-  
+
+
+
+
+
+
+
+/* #Contact {
+  font-family: 'Nunito', sans-serif;
+} */
+
+body::before {
+  display: block;
+  content: '';
+  height: 40px;
+}
+
 
 section {
-        padding: 60px 0;
-      }
+  padding: 60px 0;
+}
 
 
 .carousel-item {
-        transition: transform 20s ease-in-out !important; /* Adjust the duration and easing */
-    }
+  transition: transform 20s ease-in-out !important;
+  /* Adjust the duration and easing */
+}
 
 
 
 @media (min-width: 768px) {
-      .dropdown:hover .dropdown-menu {
-          display: block;
-      }
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
 }
 
+
 .hover-text-green:hover {
-    color: #198754;
+  color: #198754;
+}
+
+/* Header   */
+.header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 50vw;
+  min-height: 500px;
+  max-height: 600px;
+  min-width: 300px;
+  color: #eee;
+}
+
+.header:after {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(5, 5, 5, 0.411) 40%, rgb(65, 65, 67) 100%);
+}
+
+.header:before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  background: #1B2030 url('/assets/pexels-pixabay-459728.jpg') 100% 0 no-repeat;
+  background-size: 50%;
+  background-attachment: scroll;
+  background-size: cover;
+  animation: grow 100s linear 5ms infinite;
+  transition: all 0.4s ease-in-out;
+  z-index: -2
+}
+
+.info {
+  width: 100%;
+  padding: 15% 10% 0 10%;
+  text-align: left;
+
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
+}
+
+
+
+@keyframes grow {
+  0% {
+    transform: scale(1) translateY(0px)
   }
 
- /* Header   */
-    .header {
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      align-content: flex-start;
-      height: 50vw;
-      min-height: 500px;
-      max-height: 600px;
-      min-width: 300px;
-      color: #eee;
-    } 
+  50% {
+    transform: scale(1.2) translateY(-400px)
+  }
+}
 
-    .header:after {
-        content: "";
-        width: 100%;
-        height: 200%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        background: linear-gradient(to bottom, rgba(5, 5, 5, 0.411) 40%, rgb(65, 65, 67) 100%);
-      }
-  
-      .header:before {
-        content: "";
-        width: 100%;
-        height: 200%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translateZ(0);
-        backface-visibility: hidden;
-        transform: translateZ(0);
-        background: #1B2030 url('/assets/pexels-pixabay-459728.jpg') 100% 0 no-repeat;
-        background-size: 50%;
-        background-attachment:scroll;
-        background-size: cover;
-        animation: grow 100s linear 5ms infinite;
-        transition: all 0.4s ease-in-out;
-        z-index: -2
-      }
-  
-      .info {
-        width: 100%;
-        padding: 15% 10% 0 10%;
-        text-align: left;
-  
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
-      }
-  
-      
-  
-      @keyframes grow {
-        0% {
-          transform: scale(1) translateY(0px)
-        }
-  
-        50% {
-          transform: scale(1.2) translateY(-400px)
-        }
-      }
+
+
+
+/* Not added yet */
