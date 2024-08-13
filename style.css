@@ -8,16 +8,46 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e5e5f7;
-  opacity: ;
+  background-color: #bcbcbc;
+  opacity: 1;
   background-color: #006416;
-  background-image: radial-gradient(#00e851e8 0.8500000000000001px, #dffeeb 0.8500000000000001px);
-  background-size: 70px 70px;
+  background-image: radial-gradient(#06ff5de8 0.8500000000000001px, #dffeeb 0.8500000000000001px);
+  background-size: 20px 40px;
 }
 
 
 
+/* Animation Section */
+/* .bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
 
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+} */
 
 
 
